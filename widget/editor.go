@@ -374,7 +374,9 @@ func (e *Editor) processKey(gtx layout.Context) (EditorEvent, bool) {
 		transfer.TargetFilter{Target: e, Type: "image/png"},
 		transfer.TargetFilter{Target: e, Type: "image/jpg"},
 		transfer.TargetFilter{Target: e, Type: "image/jpeg"},
+		transfer.TargetFilter{Target: e, Type: "image/bmp"},
 		transfer.TargetFilter{Target: e, Type: "text/uri-list"},
+		transfer.TargetFilter{Target: e, Type: "text/file-list"},
 		key.Filter{Focus: e, Name: key.NameEnter, Optional: key.ModShift},
 		key.Filter{Focus: e, Name: key.NameReturn, Optional: key.ModShift},
 
